@@ -1,10 +1,17 @@
+/* Body Styles */
 body {
   background-color: black;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   opacity: .9;
+  margin: 0;
 }
+
+
+
+
+/* Header Styles */
 
 header {
   display: flex;
@@ -12,25 +19,62 @@ header {
   border-bottom: 1px solid seashell;
   width: 100%;
   height: 69px;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  z-index: 1;
+  background-color: black;
 }
 
-nav {
+nav span {
+  display: inline-block;
+  padding: 10px 20px;
   text-align: right;
-  display: block;
+  color: seashell;
   flex-grow: 1;
 }
 
-nav span a {
-  text-decoration: underline;
-  padding: 10px 20px;
-  display: inline-block;
+a {
   color: seashell;
+}
+
+.logo {
+  display: flex;
+  align-content: center;
+  flex-grow: 1;
+  padding-left: 10px;
 }
 
 .logo img {
   height: 50px;
-  flex-grow: 1;
+  width: 157px;
+}
+
+
+
+
+
+/* content Styles */
+
+.Page.Column {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  padding-top: 70px;
+  margin: 0px;
+}
+
+.Main.Image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../resources/images/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  margin: 0;
+  text-align: center;
+}
+
+.Main.Text {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
 }
