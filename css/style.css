@@ -6,6 +6,7 @@ body {
   color: seashell;
   opacity: .9;
   margin: 0;
+  text-align: center;
 }
 
 
@@ -24,12 +25,15 @@ header {
   background-color: black;
 }
 
+nav {
+  display: block;
+  flex-grow: 1;
+  text-align: right;
+}
 nav span {
   display: inline-block;
   padding: 10px 20px;
-  text-align: right;
   color: seashell;
-  flex-grow: 1;
 }
 
 a {
@@ -38,8 +42,8 @@ a {
 
 .logo {
   display: flex;
-  align-content: center;
-  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-left: 10px;
 }
 
@@ -55,26 +59,31 @@ a {
 /* content Styles */
 
 .Page.Column {
-  display: flex;
-  flex-direction: column;
+  display: block;
   z-index: 0;
-  padding-top: 70px;
   margin: 0px;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .Main.Image {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   background-image: url("../resources/images/img-mission-background.jpg");
-  width: 1200px;
   height: 700px;
-  margin: 0;
-  text-align: center;
+  width: 1200px;
+  flex-wrap: wrap;
+  padding-top: 69px;
 }
 
 .Main.Text {
   background-color: black;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+h2, h4 {
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
 }
