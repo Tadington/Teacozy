@@ -58,15 +58,21 @@ a {
 
 /* content Styles */
 
-.Page.Column {
-  display: block;
+h2, h4 {
+  margin: 0px;
+  padding: 10px;
+}
+
+.Column {
+  display: inline-flex;
+  flex-direction: column;
   z-index: 0;
   margin: 0px;
   align-items: center;
-  flex-grow: 1;
+  width: 1200px;
 }
 
-.Main.Image {
+.Image {
   display: flex;
   justify-content: center;
   background-image: url("../resources/images/img-mission-background.jpg");
@@ -83,7 +89,62 @@ a {
   width: 100%;
 }
 
-h2, h4 {
-  margin: 0px;
+.Content {
+  display: inline-flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.Square1 {
+  display: flex;
+  background-image: url("../resources/images/img-berryblitz.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+}
+
+.Square2 {
+  display: flex;
+  background-image: url("../resources/images/img-spiced-rum.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+}
+
+.Square3 {
+  display: flex;
+  background-image: url("../resources/images/img-donut.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+}
+
+.Square4 {
+  display: flex;
+  background-image: url("../resources/images/img-myrtle-ave.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+}
+
+.Square5 {
+  display: flex;
+  background-image: url("../resources/images/img-bedford-bizarre.jpg");
+  height: 200px;
+  width: 300px;
+  background-size: cover;
+}
+
+.Grid1, .Grid2 {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
 }
