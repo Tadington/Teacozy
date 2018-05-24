@@ -152,16 +152,26 @@ h2, h4 {
 /* Closing Styles */
 
 .Closing {
-  display: block;
+  display: inline-flex;
   justify-content: center;
   flex-direction: column;
   background-image: url("../resources/images/img-locations-background.jpg");
-  height: 795px;
+  height: 500px;
   width: 1200px;
   margin-top: 75px;
+  background-size: cover;
 }
 
 .location {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-content: center;
   flex-basis: 280px;
+}
+
+.Locations {
+  display: inline-flex;
+  justify-content: center;
 }
