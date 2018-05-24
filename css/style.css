@@ -148,3 +148,20 @@ h2, h4 {
   align-items: center;
   padding: 10px;
 }
+
+/* Closing Styles */
+
+.Closing {
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../resources/images/img-locations-background.jpg");
+  height: 795px;
+  width: 1200px;
+  margin-top: 75px;
+}
+
+.location {
+  background-color: black;
+  flex-basis: 280px;
+}
